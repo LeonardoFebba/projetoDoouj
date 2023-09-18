@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 1.125em;
+    font-size: 16px;
+    color: #555;
+    width: 96%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    line-height: 2em;
+}
+
+.menu {
+    background: #4682B4;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+
+.menu nav {
+  text-align: right;
+  padding: 10px 20px 0 0;
+}
+  
+.menu nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu nav li {
+    display: inline-block;
+    text-align: right;
+}
+  
+.menu nav li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    float: left;
+}
+
+.menu nav li a::after {
+    content: "";
+    display: block;
+    background: white;
+    height: 2px;
+    width: 0;
+    transition: 0.3s;
+}
+  
+.menu nav li a:hover::after,
+.menu nav li a.active::after {
+    width: 100%;
+}
+
+.menu-logo {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 26px;
+}
+
+.menu-logo{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Playfair Display";
+    text-transform: uppercase;
+}
+
+.menu-nav {
+    float: right;
+    margin-right: 10px;
+}
+
+.menu-nav li {
+    display: inline-block;
+}
+
+.menu-nav a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+    .menu {
+      text-align: center;
+    }
+  
+    .menu-logo {
+      float: none;
+      margin: 0 auto;
+    }
+  
+    .menu-nav {
+      float: none;
+      clear: both;
+    }
+}
+
+.intro{
+    background: url(../img/newBG.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 190px 0;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 739px) {
+    .intro {
+        padding: 60px 0;
+    }
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.intro h1::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.intro p {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.125em;
+}
+
+.default{
+    margin: 40px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.title-default{
+    text-align: center;
+    font-size: 2.25em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.acex{
+    padding: 60px 0;
+}
+
+.acex > p {
+    font-size: 1.125em;
+    font-size: 16px;
+    color: #555;
+    width: 96%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    line-height: 2em;
+} 
+
+.comp-logo > img{
+    max-width: 100%;
+    height: auto;
+}
+
+.sobre > p {
+    font-size: 1.125em;
+    font-size: 16px;
+    color: #555;
+    width: 96%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    line-height: 2em;
+} 
+
+.projeto{
+    margin-top: 30px;
+}
+
+.desafios p {
+    font-size: 16px;
+    color: #666;
+}
+
+.desafios ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.desafios ul li {
+    line-height: 2em;
+    color: #888;
+}
+
+.iframe-cnotainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
