@@ -9,17 +9,16 @@ body, h1, h2, h3, p, ul{
 }
 
 p{
-    font-size: 1.125em;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: #555;
-    width: 96%;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    line-height: 2em;
+    line-height: 1.5;
+    margin: 0 20px;
+    text-align: justify;
+    color: #333;
 }
 
 .menu {
-    background: #4682B4;
+    background: #000000;
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -48,8 +47,6 @@ p{
     color: white;
     padding: 15px 20px;
     text-decoration: none;
-    font-family: monospace;
-    text-transform: uppercase;
     font-size: 1.3em;
     letter-spacing: 2px;
     float: left;
@@ -117,11 +114,11 @@ p{
 }
 
 .intro{
-    background: url(../img/newBG.jpg) no-repeat center center;
+    background: url(../img/intro.png) no-repeat center center;
     background-size: cover;
-    padding: 190px 0;
+    padding: 250px 0;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
 }
 
 @media (max-width: 739px) {
@@ -144,7 +141,8 @@ p{
     margin: 10px auto;
 }
 
-.intro p {
+.intro span {
+    
     color: #fff;
     font-style: italic;
     font-size: 1.125em;
@@ -177,10 +175,17 @@ p{
     line-height: 2em;
 } 
 
+.comp-logo{
+    width: 100%;
+}
+
 .comp-logo > img{
     max-width: 100%;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
+
 
 .sobre > p {
     font-size: 1.125em;
