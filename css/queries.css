@@ -1,0 +1,263 @@
+@media (max-width: 739px) {
+  .menu{
+    position: inherit;
+  }
+
+  .menu-logo {
+    margin: 0 auto;
+  }
+
+  .menu nav{
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+  .menu.open nav{
+    display: block;
+  }
+
+  .menu.open nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+  }
+  
+  .menu.open nav ul li {
+    margin: 10px 0;
+  }
+  
+  .menu.open nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+  }
+
+} 
+
+@media (max-width: 739px) {
+  .intro h2{
+    font-size: medium;
+  }
+
+} 
+
+@media (max-width: 739px){
+  .acex p{
+    max-width: 93%;
+    font-size: 13px;
+  }
+
+  .acex h2{
+    font-size: medium;
+  }
+
+  .acex h6{
+    font-size: small;
+  }
+}
+
+@media (max-width: 739px){
+  .sobre p{
+    max-width: 93%;
+    font-size: 13px;
+  }
+
+  .sobre h2{
+    font-size: 20px;
+  }
+
+  .sobre h6{
+    font-size: small;
+  }
+
+  .parallax{
+    height: fit-content;
+    display: block;
+    
+    text-align: left;
+  }
+}
+
+@media (max-width: 739px){
+  .projeto p{
+    max-width: 93%;
+    font-size: 13px;
+  }
+
+  .projeto h2{
+    font-size: medium;
+  }
+
+  .projeto h6{
+    font-size: small;
+  }
+}
+
+@media (max-width: 739px){
+  .response{
+    display: initial;
+  }
+
+  .container-sm{
+    display: none;
+  }
+
+  .response h5{
+    text-align: center;
+    color: #00BFFF;
+    padding-bottom: 10px;
+  }
+
+  .response p{
+    color: #fff;
+  }
+}
+
+@media (max-width: 739px){
+  .hold p{
+    max-width: 93%;
+    font-size: 13px;
+  }
+
+  .desafios p, ul, li{
+    max-width: 93%;
+    font-size: 13px;
+  }
+
+  .desafios h2{
+    font-size: medium;
+  }
+
+  .desafios h6{
+    font-size: small;
+  }
+}
+
+@media (max-width: 739px){
+  .spatial p{
+    max-width: 93%;
+    font-size: 13px;
+  }
+
+  .spatial h2{
+    font-size: medium;
+  }
+
+  .spatial h6{
+    font-size: small;
+  }
+}
+
+@media (max-width: 739px){
+  .cufsa p{
+    max-width: 93%;
+    font-size: 13px;
+  }
+
+  .cufsa h2{
+    font-size: medium;
+  }
+
+  .cufsa h6{
+    font-size: small;
+  }
+}
+
+@media (max-width: 739px) {
+  .buttons {
+    background-color: #000;
+    padding-bottom: 20px;
+    text-align: center; /* Centralize o conteúdo verticalmente */
+  }
+
+  .buttons h2 {
+    padding-top: 60px;
+  }
+
+  .buttons h4 {
+    color: #00BFFF;
+    text-align: center;
+    margin-top: 20px; /* Reduza a margem superior */
+    margin-bottom: 20px; /* Reduza a margem inferior */
+  }
+
+  .buttons p,
+  .buttons label {
+    color: #fff;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Altere a direção do flex para coluna */
+  }
+
+  /* Remova as margens dos botões para separá-los verticalmente */
+  .center .btn-15 {
+    margin: 10px 0;
+  }
+
+  .btn-15 {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    background: #00BFFF;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+
+  .btn-15:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #3793fd;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .btn-15:hover {
+    color: #fff;
+  }
+
+  .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+
+  .btn-15:active {
+    top: 2px;
+  }
+
+  .btn-15 a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@media (max-width: 739px) {
+  .footer{
+    display: block;
+    margin-right: 30px;
+  }
+}

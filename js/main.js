@@ -1,7 +1,7 @@
 const texts = [
     "Moldando o futuro educacional no metaverso.",
-    "Conectamos escolhas a oportunidades educacionais ilimitadas",
-    "Inovação, excelência e ética - nosso compromisso com o futuro."
+    "Conectamos escolhas a oportunidades ilimitadas",
+    "Inovação e excelência - nosso compromisso com o futuro."
 ];
 
 let currentTextIndex = 0; // Índice atual do texto
@@ -36,3 +36,23 @@ function typeWriter() {
 window.onload = function () {
     typeWriter();
 };
+
+const menuLinks = document.querySelectorAll('.menu-nav a');
+
+// Adicione um evento de clique a cada link do menu
+menuLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Impede o comportamento padrão de clicar no link
+
+    // Obtenha o ID da seção a ser navegada a partir do atributo href do link
+    const targetId = link.getAttribute('href').substring(1);
+
+    // Selecione a seção alvo com base no ID
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      // Use o método scrollIntoView para rolar suavemente para a seção alvo
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
