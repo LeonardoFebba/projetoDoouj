@@ -384,6 +384,11 @@ p{
     color: #888;
 }
 
+.strong{
+    color: black;
+    font-weight: bolder;
+}
+
 .iframe-cnotainer{
     display: flex;
     justify-content: center;
